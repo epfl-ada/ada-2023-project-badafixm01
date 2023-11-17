@@ -20,15 +20,15 @@ This analysis is conducted on a per genre basis, focusing on the top-10 prevalen
 #### Emotion Quantification 
 We employ two metrics for evaluating emotions in movie plot summaries and titles.
 
-**Emotion intensity vector:** This metric is derived from the [NRC Emotion Intensity Lexicon][https://saifmohammad.com/WebPages/AffectIntensity.htm], which categorizes English words into 8 emotion categories and assigns an emotion intensity score to each word. We compute the emotion intensity vector for each summary by aggregating the intensities of each lexicon word and normalization, such that the entries in the vector indicate relative strength of the 8 emotions.
+**Emotion intensity vector:** This metric is derived from the [NRC Emotion Intensity Lexicon](https://saifmohammad.com/WebPages/AffectIntensity.htm), which categorizes English words into 8 emotion categories and assigns an emotion intensity score to each word. We compute the emotion intensity vector for each summary by aggregating the intensities of each lexicon word and normalization, such that the entries in the vector indicate relative strength of the 8 emotions.
 
-**Sentiment score:** We use the [TextBlob][https://textblob.readthedocs.io/en/dev/] library for calculating sentiment scores for movie summaries and titles. The sentiment scores are further classified into 5 categories, which are used as labels in machine learning.
+**Sentiment score:** We use the [TextBlob](https://textblob.readthedocs.io/en/dev/) library for calculating sentiment scores for movie summaries and titles. The sentiment scores are further classified into 5 categories, which are used as labels in machine learning.
 
 #### Cluster Analysis
 To identify the prevalent emotions and typical emotion intensity patterns for each genre, we perform cluster analysis on emotion intensity vectors. This analysis answers our first research question.
 
 #### Genre Definition by Emotion
-We extend the idea of linking genres with emotions by creating a definition of each genre with emotional tags. For this analysis we utilize the [GoEmotions][https://github.com/google-research/google-research/tree/master/goemotions] pipeline, which contains 27 emotion categories and provides a pretrained BERT model for inferencing.
+We extend the idea of linking genres with emotions by creating a definition of each genre with emotional tags. For this analysis we utilize the [GoEmotions](https://github.com/google-research/google-research/tree/master/goemotions) pipeline, which contains 27 emotion categories and provides a pretrained BERT model for inferencing.
 
 #### Time-Based Emotional Trends
 As people's tastes evolve, the preferred emotion might shift over the years. For example, in an era dominated by socio-political unrest, audiences might lean towards uplifting films as an escapade. We exploit this idea by two approaches: 
