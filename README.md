@@ -1,4 +1,4 @@
-# ✨✨ Feel the Genres 
+# ✨✨ Feel the Genres ✨✨ 
 
 *Badafixm01: Berta Céspedes, Inès Kahlaoui, Mya Lahjouji, Fernando Meireles, Xiaocheng Zhang*
 
