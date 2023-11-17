@@ -13,7 +13,7 @@ In our project, we are looking to solve the following questions
 * How do movie sentiments compare over different time periods?
 
 
-## 📒 Dataset
+## 📒 Datasets
 ### [CMU Movie Summary Corpus](https://www.cs.cmu.edu/~ark/personas/)
 This is the provided dataset for the analysis. Our research questions mostly concern the movie summary, genre, and box office revenue data. During the initial filtering of the dataset, we found 42,207 movies with available summary and metadata, out of which 7,588 movies have box office revenue data. Since the dataset contains a total of 364 genres and some of them may not be meaningful, we only consider the first genre associated with each movie as the main genre and focus on the top-10 frequent main genres.
 
@@ -61,15 +61,14 @@ We conduct multivariate regression per genre on box office revenue with emotion 
 
 
 ## ⏱️ Proposed Timeline
-* 18.11.2023 - 24.11.2023: Cluster analysis, emotion along the plot
+| Start Date  | End Date    | Task                                         |
+|-------------|-------------|----------------------------------------------|
+| 18.11.2023  | 01.12.2023  | Homework H2                                  |
+| 02.12.2023  | 08.12.2023  | Cluster analysis, emotion along the plot     |
+| 09.12.2023  | 12.12.2023  | Genre definition by emotion                  |
+| 13.12.2023  | 15.12.2023  | Finalize visualization, develop data story   |
+| 16.12.2023  | 22.12.2023  | Finalize data story and notebook             |
 
-* 25.11.2023 - 01.12.2023: Homework H2
-
-* 02.12.2023 - 08.12.2023: Genre definition by emotion
-
-* 09.12.2023 - 15.12.2023: Finalize visualization, develop data story
-
-* 16.12.2023 - 22.12.2023: Finalize data story and notebook
 
 
 ## 👫 Organization within the Team
