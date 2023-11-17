@@ -22,13 +22,12 @@ This dataset provides a list of 15,256 English words with emotion intensity scor
 
 
 ## Methods
-### Preprocessing
----
+### Part I: Preprocessing
 We apply a series of transformation to the movie summaries, including tokenization, lemmatization, removing punctuations, and converting to lowercase. These preprocessing steps ensures proper recognition of words associated with emotions that are defined in the emotion lexicon.
 
-
-### Genre-Emotion Analysis
 ---
+
+### Part II: Genre-Emotion Analysis
 #### Emotion Quantification 
 We employ two metrics for evaluating emotions in movie plot summaries and titles:
 
@@ -50,9 +49,9 @@ As people's tastes evolve, the preferred emotion might shift over the years. For
 * Time-series analysis: Develop line plots for genre-specific emotion intensities over time.
 * Cohort analysis: Segment the data into cohorts based on movie release years or periods and compare emotion intensity trends across cohorts.
 
-
-### Emotion as a Predictor
 ---
+
+### Part III: Emotion as a Predictor
 #### Machine Learning
 We adopt decision tree and random forest models for predicting missing box office revenue data. We start with genre and sentiment score as the only input features, and iteratively add to the complexity of the model by considering other variables, e.g., movie runtime, main character gender, language, and country. We apply discretization to continuous input features, assess the prediction performance using both label encoding and one-hot encoding, and select the method that yields better performance. The aim of this analysis is to find a subset of variables that enables us to determine the success of a movie.
 
