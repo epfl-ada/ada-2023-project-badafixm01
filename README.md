@@ -1,6 +1,10 @@
-# ✨✨ WE NEED A TITLE ✨✨ 
+# ✨✨ Through the Lens of Time ✨✨
+## Cinematic Emotions Across Generations, Genres, and More!
 
 *Badafixm01: Berta Céspedes, Inès Kahlaoui, Mya Lahjouji, Fernando Meireles, Xiaocheng Zhang*
+
+## Data Story
+Read our data story [HERE!](https://badafixm01.streamlit.app/)
 
 ## Abstract
 
