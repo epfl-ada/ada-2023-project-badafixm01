@@ -20,7 +20,7 @@ This is the provided dataset for the analysis. Our research questions mostly con
 
 
 ### [NRC Emotion Intensity Lexicon](https://saifmohammad.com/WebPages/AffectIntensity.htm)
-This dataset provides a list of 15,256 English words with human-annotated emotion intensity scores for 8 emotion categories: `anger`, `anticipation`, `disgust`, `fear`, `joy`, `sadness`, `surprise`, and `trust`. The intensity scores range from 0 to 1, with higher values indicating stronger emotion.
+This dataset provides a list of 15,256 English words with human-annotated emotion intensity scores for 8 emotion categories: `anger`, `anticipation`, `disgust`, `fear`, `joy`, `sadness`, `surprise`, and `trust`. The intensity scores range from 0 to 1, with higher values indicating stronger emotions.
 
 
 ## 📊 Methods
@@ -30,7 +30,7 @@ This dataset provides a list of 15,256 English words with human-annotated emotio
 We apply a series of transformation to the movie summaries, including tokenization, lemmatization, removing punctuations, and converting to lowercase. These preprocessing steps ensures proper recognition of words associated with emotions that are defined in the emotion lexicon.
 
 #### Exploratory Data Analysis
-We conducted exploratory data analysis on various aspects of the movie metadata, including movie releases, genres, countries, languages, runtime, and release date or period. To uncover interesting trends and patterns, we employed visualization techniques such as bar plots, stacked bar plots, and line plots. These visualizations help identify interesting trends and patterns for further analysis.
+We conducted exploratory data analysis on various aspects of the movie metadata, including number of movie releases, genres, countries, languages, runtime, and release date and period. To uncover interesting trends and patterns, we employed visualization techniques such as bar plots, stacked bar plots, and line plots. These visualizations help identify interesting trends and patterns for further analysis.
 
 ---
 
@@ -42,21 +42,23 @@ This metric is derived from the [NRC Emotion Intensity Lexicon](https://saifmoha
 #### Sentiment Score
 We use the [TextBlob](https://textblob.readthedocs.io/en/dev/) library for calculating polarity sentiment scores for movie summaries. The sentiment scores lie between [-1, 1], where -1 defines a negative sentiment and 1 defines a positive sentiment.
 
+---
+
 ### Part III: Genre-Emotion Analysis
 
 #### Cluster Analysis
-Can we easily delineate genres according to the emotional patterns? To find the answer, we perform cluster analysis on emotion intensity vectors using dimensionality reduction techniques, including t-SNE and PCA, followed by the K-means algorithm. The clustering enables the grouping of emotion intensity vectors based on their proximity, efficiently identifying boundaries in the data. This approach allows us to validate whether emotional intensities can serve as a signature for genres.
+Can we easily delineate genres according to the emotional patterns? To find the answer, we perform cluster analysis on emotion intensity vectors using dimensionality reduction techniques, t-SNE and PCA, followed by the K-means algorithm. The clustering enables the grouping of emotion intensity vectors based on their proximity, efficiently identifying boundaries in the data. This approach allows us to validate whether emotional intensities can serve as a signature for genres.
 
 #### Regression Analysis
-To what degree can emotional intensities and sentiment help shape the genre? We seek the answer in regression analysis. We build Ordinary Least Squares models with emotion intensities and sentiment score as independent variables. The movies underwent paired matching on country, language, generation, and runtime to eliminate confounding factors. With row-wise and column-wise normalization, the regression slopes can indicate the influence to the probability that a movie belongs to a genre. The significance of the regression coefficients are examined by *t*-tests.
+To what degree can emotional intensities and sentiment help shape the genre? We seek the answer in regression analysis. We build Ordinary Least Squares models with emotion intensities and sentiment score as independent variables. Paired matching is performed on country, language, generation, and runtime to eliminate confounding factors. The significance of the regression coefficients are examined by *t*-tests.
 
 ---
 
-### Part III: Time-based Analysis
-As people's tastes evolve, the prevalent emotions in the cinematic world might shift over the years. For example, in an era dominated by socio-political unrest, movies with tension and angst might emerge to reflect the societal issues. We exploit this idea by splitting the data into generations based on movie release years. The generations considered in the analysis include: The Lost Generation (born between 1883 and 1900), The Greatest Generation (1901–1927), The Silent Generation (1928–1945), The Baby Boomers (1946–1964), Generation X (1965–1980), The Millennials (1981–1996), Generation Z (1997–2009), Generation Alpha (2010–2024).
+### Part IV: Time-based Analysis
+As people's tastes evolve, the prevalent emotions in the cinematic world might shift over the years. For example, during an era dominated by socio-political unrest, movies with tension and angst might emerge to reflect societal issues. We exploit this idea by splitting the data into generations based on movie release years. The generations considered in the analysis include: The Lost Generation (born between 1883 and 1900), The Greatest Generation (1901–1927), The Silent Generation (1928–1945), The Baby Boomers (1946–1964), Generation X (1965–1980), The Millennials (1981–1996), Generation Z (1997–2009), Generation Alpha (2010–2024).
 
 #### Emotion Intensity Trends
-We construct time series of emotional intensity vectors with two kinds of visualizations:
+We construct time series of emotional intensity vectors with two types of visualizations:
 *   Stacked bar plot for emotional intensities over generations.
 *   Line plot for genre-specific emotional intesities over years.
 
@@ -79,14 +81,18 @@ Having seen the relationship between generations and basic emotions, such as ang
 |------------|-------------------------------------------------------------|
 | Berta      |(1) Run models to construct word clouds                      |
 |            |(2) Perform country-based exploratory analysis               |
+|------------|-------------------------------------------------------------|
 | Inès       |(1) Plan out data analysis and visualization                 |
 |            |(2) Develop data story                                       |
-|            |(1) Perform data preprocessing                               |
-| Mya        |(2) Perform genre and generation-based exploratory analysis  |
+|------------|-------------------------------------------------------------|
+| Mya        |(1) Perform data preprocessing                               |
+|            |(2) Perform genre and generation-based exploratory analysis  |
 |            |(3) Visualize sentiment score related findings               |
-|            |(1) Calculate emotion intensity vector                       |
-| Fernando   |(2) Perform cluster analysis                                 |
+|------------|-------------------------------------------------------------|
+| Fernando   |(1) Calculate emotion intensity vector                       |
+|            |(2) Perform cluster analysis                                 |
 |            |(3) Visualize emotion intensity related findings             |
-|            |(1) Perform regression analysis                              |
-| Xiaocheng  |(2) Perform matching for generation-based analysis           |
+|------------|-------------------------------------------------------------|
+| Xiaocheng  |(1) Perform regression analysis                              |
+|            |(2) Perform matching for generation-based analysis           |
 |            |(3) Document README and final notebook                       |
