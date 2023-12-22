@@ -81,18 +81,14 @@ Having seen the relationship between generations and basic emotions, such as ang
 |------------|-------------------------------------------------------------|
 | Berta      |(1) Run models to construct word clouds                      |
 |            |(2) Perform country-based exploratory analysis               |
-|------------|-------------------------------------------------------------|
 | Inès       |(1) Plan out data analysis and visualization                 |
 |            |(2) Develop data story                                       |
-|------------|-------------------------------------------------------------|
 | Mya        |(1) Perform data preprocessing                               |
 |            |(2) Perform genre and generation-based exploratory analysis  |
 |            |(3) Visualize sentiment score related findings               |
-|------------|-------------------------------------------------------------|
 | Fernando   |(1) Calculate emotion intensity vector                       |
 |            |(2) Perform cluster analysis                                 |
 |            |(3) Visualize emotion intensity related findings             |
-|------------|-------------------------------------------------------------|
 | Xiaocheng  |(1) Perform regression analysis                              |
 |            |(2) Perform matching for generation-based analysis           |
 |            |(3) Document README and final notebook                       |
