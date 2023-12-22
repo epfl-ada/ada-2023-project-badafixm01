@@ -91,4 +91,3 @@ Having seen the relationship between generations and basic emotions, such as ang
 |            |(3) Visualize emotion intensity related findings             |
 | Xiaocheng  |(1) Perform regression analysis                              |
 |            |(2) Perform matching for generation-based analysis           |
-|            |(3) Document README and final notebook                       |
